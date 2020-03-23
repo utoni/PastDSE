@@ -11,7 +11,6 @@
 *.userprefs
 
 # Build results
-x86/
 bld/
 [Oo]bj/
 [Ll]og/
