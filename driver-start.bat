@@ -1,7 +1,7 @@
 @echo off
 set SCNAME=PastDSE
 set DRIVER="%~dp0\x64\Debug\PastDSEDriver.sys"
-if not exist %DRIVER% set DRIVER="%~dp0\bin\x64\Debug\PastDSEDriver.sys"
+if not exist %DRIVER% set DRIVER="%~dp0\bin\x64\Debug\PastDSEDriver-cert_0.sys"
 
 net session >nul 2>&1
 if %ERRORLEVEL% EQU 0 (
