@@ -25,7 +25,7 @@ It should now be possible to load the (Debug) target driver by running `driver-s
 You can now use **PastDSECtrl** to manual map your (unsigned) driver.  
 
 
-## *** IMPORTANT, READ THIS BEFORE RUNNING ANYTHING ***
+# Insights
 Your driver requires an exported  
 `NTSTATUS DriverEntry(_In_  struct _DRIVER_OBJECT *DriverObject, _In_  PUNICODE_STRING RegistryPath)`  
 symbol just as usual.  
@@ -37,9 +37,7 @@ Example:
 - *PatchGuard* will complain if you use functions like `PsSetLoadImageNotifyRoutine`, `PsSetCreateProcessNotifyRoutine` and `PsSetCreateThreadNotifyRoutine`
 - `ObRegisterCallbacks` returns *Access denied*
 - there may be other functions e.g. `FltRegisterFilter`
-  
-It is possible to use these funcions by hijacking an existing driver objects. You'll figure that out.
 
 
 # Contributors
-As you can see, I've used some slightly modified code from [BlackBone](https://github.com/DarthTon/Blackbone) for the driver mapping and relocation.
+Some slightly modified code from [BlackBone](https://github.com/DarthTon/Blackbone) for the driver mapping and relocation.
