@@ -44,7 +44,6 @@ NTSTATUS CheckVersion(void)
 		{
 			/* TODO: Verify on other builds */
 			KDBG("WARNING: ONLY Windows 10.0.17134 (1803/RS4) supported at the moment!\n");
-			return STATUS_ACCESS_DENIED;
 		}
 	}
 
