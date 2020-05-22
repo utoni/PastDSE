@@ -251,3 +251,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/x64/Debug
+/x64/Release
+/PastDSEDriver/x64
+/PastDSECtrl/x64
