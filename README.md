@@ -1,7 +1,7 @@
 # What?
-*PastDSE* is a **Driver Sign Enforcement** "bypass" using a leaked certificate.  
-It is actually not a real bypass since it does only change the date to 01-01-2014 before signing the driver and restores it afterwards.  
-The Kernel driver loader will accept all driver images as long as the code was signed by a *Certificate Authority* which was not revoked.  
+*PastDSE* is a **Driver Sign Enforcement** "bypass" using a leaked EV code signing certificate.
+It is actually not a real bypass since it does only change the date to 01-01-2014 before signing the driver and restores it afterwards.
+The Kernel driver loader will accept all driver images as long as the code was signed by a *extended validation code signing certificate* which was not revoked.
 
 
 # Dependencies
