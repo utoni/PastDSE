@@ -7,7 +7,7 @@ As *PastDSE* works only on 1803 or with testsigning enabled it can stil be used 
 
 # Dependencies
 - Visual Studio 2017 Community Edition
-- Windows 10 x64 1803 (may work on older versions, not verified)
+- Windows 10 x64 1803, 1809 and 1903 (may work on older versions, not verified)
 - Windows 10 SDK 10.0.17763.0
 - Windows Driver Kit
 - Windows Universal CRT SDK
