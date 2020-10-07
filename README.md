@@ -3,7 +3,7 @@
 It is actually not a real bypass since it does only change the date to 01-01-2014 before signing the driver and restores it afterwards.
 The Kernel driver loader will accept all driver images as long as the code was signed by a *extended validation code signing certificate* which was not revoked.
 
-As *PastDSE* works only on 1803 or with testsigning enabled it can stil be used in combination with [EfiGuard](https://github.com/Mattiwatti/EfiGuard).
+As *PastDSE* works only on 1803, 1809, 1903 or with testsigning enabled it can stil be used in combination with [EfiGuard](https://github.com/Mattiwatti/EfiGuard).
 
 # Dependencies
 - Visual Studio 2017 Community Edition
