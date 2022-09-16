@@ -5,12 +5,10 @@ on:
 
   push:
     branches:
-      - master
-      - gh-msbuild
+      - main
   pull_request:
     branches:
-      - master
-      - gh-msbuild
+      - main
     types: [opened, synchronize, reopened]
   release:
     types: [created]
@@ -27,6 +25,9 @@ jobs:
 
       - name: Build solution for release
         run: msbuild PastDSE.sln -t:rebuild -property:Configuration=Release
+
+      - name: Build solution for debug
+        run: msbuild PastDSE.sln -t:rebuild -property:Configuration=Debug
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
