@@ -1,0 +1,36 @@
+name: Build
+on:
+  schedule:
+    - cron: '30 5 1 * *'
+
+  push:
+    branches:
+      - master
+      - gh-msbuild
+  pull_request:
+    branches:
+      - master
+      - gh-msbuild
+    types: [opened, synchronize, reopened]
+  release:
+    types: [created]
+jobs:
+  test:
+    name: MSBuild
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+
+      - name: Build solution for release
+        run: msbuild PastDSE.sln -t:rebuild -property:Configuration=Release
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: x64
+          retention-days: 14
