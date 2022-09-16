@@ -90,6 +90,8 @@
       <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <DriverSign>
       <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
@@ -99,6 +101,8 @@
     <ClCompile>
       <PreprocessorDefinitions>_WIN10_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <DriverSign>
       <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
@@ -108,6 +112,8 @@
     <ClCompile>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <DriverSign>
       <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
@@ -117,6 +123,12 @@
     <DriverSign>
       <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
     </DriverSign>
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />
