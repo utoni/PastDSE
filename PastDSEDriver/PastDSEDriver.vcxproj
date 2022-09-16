@@ -133,6 +133,12 @@
     <ClInclude Include="Native.h" />
     <ClInclude Include="PE.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\driver-sign.bat" />
+    <None Include="..\driver-start.bat" />
+    <None Include="..\driver-stop.bat" />
+    <None Include="..\README.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

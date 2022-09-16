@@ -40,4 +40,10 @@
       <Filter>Header Files\Internal</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\driver-sign.bat" />
+    <None Include="..\driver-start.bat" />
+    <None Include="..\driver-stop.bat" />
+    <None Include="..\README.md" />
+  </ItemGroup>
 </Project>
